@@ -24,7 +24,7 @@ export function getProducts() {
             const data = await fetch("https://fakestoreapi.com/products");
             const result = await data.json();
 
-            console.log("Fetched JSON data:", result);
+
 
             dispatch(fetchProducts(result));
         } catch (error) {
